@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let currentSequence = null;
+
     const synth = new Tone.Synth().toDestination();
 
     try {
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         descriptionElement.textContent = compositionData.description;
 
         const playButton = document.getElementById('playButton');
+        const stopButton = document.getElementById('stopButton');
 
         playButton.addEventListener('click', async () => {
             if (!compositionData.notes || compositionData.notes.length === 0) {
@@ -17,8 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
 
+
             try {
                 await Tone.start(); // 오디오 컨텍스트 시작
+
 
                 // 기존 시퀀스 정리
                 if (currentSequence) {
@@ -43,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('음악 재생 중 오류가 발생했습니다.');
             }
         });
+
 
 
     } catch (error) {
