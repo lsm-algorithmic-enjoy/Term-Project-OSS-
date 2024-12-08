@@ -37,7 +37,10 @@ cd Term-Project-OSS-
 pip install -r requirements.txt
 ```
 
+3. 환경 변수 설정
+- `.env` 파일을 생성하고 OpenAI API 키를 설정, 프로젝트 공개 및 실행을 위해 특별히 제 계정의 API 키를 한시적으로 공개합니다. 아래 이미지에 표시되어 있는 키를 그대로 입력하세요.
 
+![image](./image/env.png)
 
 4. 애플리케이션 실행
 
@@ -50,8 +53,13 @@ python main.py
 1. 웹 브라우저에서 `http://127.0.0.1:5000/` 접속
 2. 원하는 키워드 입력 (예: 봄, 별빛, 바다)
 3. "생성하기" 버튼 클릭
+
+![image](./image/result1.png)
+
 4. 생성된 멜로디를 "재생/정지" 버튼으로 제어
 5. "다시 생성하기" 링크를 통해 초기화면으로 복귀하여 새로운 키워드로 작곡 가능
+
+![image](./image/result2.png)
 
 ## 시스템 아키텍처
 
@@ -84,7 +92,7 @@ graph TD
     style E fill:#fbb,stroke:#333,stroke-width:2px
 ```
 
-### 프로젝트 진행 플로우
+### 시스템 아키텍처 플로우 설명
 1. 사용자가 웹 인터페이스를 통해 키워드 입력
 2. Flask 서버가 요청을 받아 OpenAI GPT-4 API로 전달
 3. GPT-4가 키워드를 기반으로 음악 데이터 생성
@@ -115,4 +123,6 @@ graph TD
 ## 라이선스
 
 이 프로젝트는 MIT 라이선스를 따릅니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
+
+## 시연 영상 링크 (템포 조절 가능 시연)
 
