@@ -48,7 +48,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        stopButton.addEventListener('click', () => {
+            if (!isPlaying) return;
 
+            Tone.Transport.stop();
+            Tone.Transport.cancel();
+
+            if (currentSequence) {
+                currentSequence.dispose();
+                currentSequence = null;
+            }
+
+        });
 
     } catch (error) {
         console.error('음악 데이터 처리 중 오류 발생:', error);
