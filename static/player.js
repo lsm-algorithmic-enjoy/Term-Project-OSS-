@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let currentSequence = null;
-
+    let isPlaying = false;
     const synth = new Tone.Synth().toDestination();
 
     try {
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-
+            if (isPlaying) return;
 
             try {
                 await Tone.start(); // 오디오 컨텍스트 시작
-
+                isPlaying = true;
 
                 // 기존 시퀀스 정리
                 if (currentSequence) {
@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentSequence = null;
             }
 
+            isPlaying = false;
         });
 
     } catch (error) {
