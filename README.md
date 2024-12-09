@@ -45,8 +45,11 @@ pip install -r requirements.txt
 4. 애플리케이션 실행
 
 ```bash
-python main.py
+python main.py 또는
+python3 main.py (mac의 경우)
 ```
+
+![image](./image/result3.png)
 
 ## 사용 방법
 
