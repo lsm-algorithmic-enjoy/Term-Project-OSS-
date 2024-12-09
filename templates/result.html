@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>결과</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>"{{ keyword }}"에 대한 작곡 결과</h1>
+        <div id="composition-data" data-composition='{{ composition | tojson | safe }}'></div>
+        <div class="music-controls">
+            <button id="playButton">재생</button>
+            <button id="stopButton">정지</button>
+        </div>
+        <pre id="description"></pre>
+        <a href="{{ url_for('index') }}" class="back-button">다시 생성하기</a>
+    </div>
+    <script src="{{ url_for('static', filename='player.js') }}"></script>
+</body>
+</html>
