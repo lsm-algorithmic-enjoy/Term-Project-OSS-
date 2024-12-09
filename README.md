@@ -64,9 +64,11 @@ python3 main.py (mac의 경우)
 
 ![image](./image/result2.png)
 
-## 프로젝트 시연 동영상 링크
+## 📽️ 프로젝트 시연 동영상
 
-[영상 링크](https://drive.google.com/drive/u/0/folders/1P5zzZFZpqBcAJrFTHHdWnr_L-3xxmhzj)
+> ### [👉 여기를 클릭하여 시연 영상 보기](https://drive.google.com/drive/u/0/folders/1P5zzZFZpqBcAJrFTHHdWnr_L-3xxmhzj)
+> 
+> ℹ️ 프로젝트의 주요 기능과 사용 방법을 실제로 시연하는 영상입니다.
 
 ## 시스템 아키텍처
 
