@@ -61,6 +61,8 @@ python main.py
 
 ## 시연 영상 링크 (템포 조절 가능 시연)
 
+https://drive.google.com/drive/u/0/folders/1P5zzZFZpqBcAJrFTHHdWnr_L-3xxmhzj
+
 ## 시스템 아키텍처
 
 ```mermaid
